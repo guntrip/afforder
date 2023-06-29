@@ -1,0 +1,11 @@
+CACHE MANIFEST
+# 2023-06-29 0.1
+
+# Explicitly cached 'master entries'.
+CACHE:
+index.html
+magic.js
+mob.css
+graphics/aflogo.png
+apple-touch-icon.png
+apple-touch-icon-144.png

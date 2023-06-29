@@ -1,0 +1,99 @@
+<!--<html manifest="af.appcache">-->
+<html>
+<head>
+<title>afforder</title>
+<script type="text/javascript" src="magic.js"></script>
+<link rel="stylesheet" href="mob.css" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-144" />
+<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon.png" />
+</head>
+<body onLoad="load();">
+
+  <div class="wiggle-top">
+    <img id="logo" onclick="show_help()" src="graphics/aflogo.png"/>
+    <div class="headline" onclick="spend();">
+      <span id="spent"></span> / <span id="balance" class="balance"></span>
+    </div>
+    <div id="alert" class="alert">
+      <div>You've overspent by <span id="overspent_amount"></span>.</div>
+      <div>Based on this, your budget will be reduced as follows: <span id="overspent_preview"></span>.</div>
+    </div>
+  </div>
+
+  <div class="wiggle-bottom">
+    <div class="budgets">
+      <div class="budget" onclick="update_monthly_budget()"><div class="title">Month</div><div class="value" id="month_budget"></div></div>
+      <div class="budget"><div class="title">Week</div><div class="value" id="week_budget"></div></div>
+    </div>
+  </div>
+
+  <div class="info">    
+    
+    <div id="spending_history_today">
+      Spent today:
+      <div id="spend_today_data"></div>
+    </div>
+
+    <div id="about"></div>
+
+  </div>
+
+  <div id="help">
+
+    <div class="closer" onclick="hide_help();">x</div>
+    
+    <div class="header" onclick="hide_help();">
+      <img src="graphics/aflogo.png"/>
+    </div>
+
+    <p>
+      Hello! Afforder is a little app to help you budget. It's very simple and all your data stays on your phone. If you have any questions or feedback, please email iamsteve@gmail.com.
+    </p>
+
+    <p>
+      <b>Concept</b><br />
+      Provide Afforder with your monthly spending budget and it will divide that into a daily budget. Try and stay within that budget. If you spend less, your daily budget will go up throughout the month. If you spend more, you'll see a warning showing how much you've reduced your budget by. Afforder assumes you've already figured out your bills, savings, etc.
+    </p>
+
+    <p>
+      <b>Installing on iOS</b><br />
+      Tap the share button, scroll down, tap "Add to home screen".
+    </p>
+
+    <p>
+      <b>Installing on Android</b><br />
+      Open the menu, tap "Add to home screen".
+    </p>
+
+    <p>
+      <b>Usage</b><br />
+      Tap on the monthly budget to set it.<br />
+      Tap on your daily budget (top of the app) to record spending.<br />
+      Tap on items in your spend history to delete them.
+    </p>
+
+    <p>
+      <b>Notes</b><br />
+      Afforder is a PWA (progressive web app) that works offline and uses your phone's cache to store data. Most phones will persist this data but there's no guarantee.
+      <br /><br />
+      This is an experiment. If it turns out to be useful, I'll make this into a fully-fledged iOS/Android app. Please do let me know if it's been helpful, or if you have any ideas.
+    </p>
+
+    <p>
+      To show this again, tap the logo on the top right.
+    </p>
+
+    <p>
+      made by Steve xxx<br />
+      guntrip.co.uk
+    </p>
+    
+  </div>
+
+
+</body>
+</html>
