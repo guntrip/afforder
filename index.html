@@ -13,7 +13,7 @@
 </head>
 <body onLoad="load();">
 
-  <div class="wiggle-top">
+  <div class="top">
     <img id="logo" onclick="show_help()" src="graphics/aflogo.png"/>
     <div class="headline" onclick="spend();">
       <span id="spent"></span> / <span id="balance" class="balance"></span>
@@ -24,14 +24,14 @@
     </div>
   </div>
 
-  <div class="wiggle-bottom">
+  <div class="middle">
     <div class="budgets">
       <div class="budget" onclick="update_monthly_budget()"><div class="title">Month</div><div class="value" id="month_budget"></div></div>
       <div class="budget"><div class="title">Week</div><div class="value" id="week_budget"></div></div>
     </div>
   </div>
 
-  <div class="info">    
+  <div class="bottom">    
     
     <div id="spending_history_today">
       Spent today:

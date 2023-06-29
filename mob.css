@@ -44,19 +44,19 @@ body {
   font-weight: bold;
 }
 
-.info {
+.bottom {
   margin-left: 20px;
   color: #bb86fc;
   padding:8px;
   padding-top:20px;
 }
 
-.info ul {
+.bottom ul {
   list-style-type: none;
   padding-left: 10px;
 }
 
-.info #about {
+.bottom #about {
   font-size:0.8em;
   color: #8f5eca;
 }
@@ -91,55 +91,26 @@ body {
 
 /* Wiggles */
 
-.wiggle-top {
+.top {
   background-color: #6200ee;
   color: #fff;
   position: relative;
   padding: 8px;
   padding-top:40px;
-  padding-bottom:85px;
+  padding-bottom:70px;
+  background-image: url("graphics/curve_1.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
 }
 
-.wiggle-top::before {   
-  content: "";
-  width: 100%;
-  height: 130px;
-  position: absolute;
-  bottom: -0.3%;
-  left: 0;
-  background-size: auto;
-  background-repeat: repeat no-repeat;
-  background-position: 76vw bottom;
-  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  97' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 71L50 67C100 63 200 54 300 36C400 19 500 -8 600 1C700 10 800 54 900 71C1000 89 1100 80 1150 76L1200 71V98H1150C1100 98 1000 98 900 98C800 98 700 98 600 98C500 98 400 98 300 98C200 98 100 98 50 98H0V71Z' fill='%23bb86fc'/></svg>");
-}
-
-.wiggle-bottom {  
+.middle {
   padding-left: 8px;
   padding-right: 8px;
-  padding-bottom:60px;
+  padding-bottom:50px;
   background-color: #bb86fc;
   color: #6200ee;
   position: relative;
-}
-
-.wiggle-bottom::before {   
-  content: "";
-  width: 100%;
-  height: 80px;
-  position: absolute;
-  bottom: -0.3%;
-  left: 0;
-  background-size: auto;
-  background-repeat: repeat no-repeat;
-  background-position: 47vw bottom;
-  background-image: url("data:image/svg+xml;utf8,<svg viewBox='0 0 1200  111' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M0 81L50 76C100 71 200 61 300 41C400 21 500 -8 600 1C700 11 800 61 900 81C1000 101 1100 91 1150 86L1200 81V111H1150C1100 111 1000 111 900 111C800 111 700 111 600 111C500 111 400 111 300 111C200 111 100 111 50 111H0V81Z' fill='%234a1d78'/></svg>");
-}
-
-@media(max-width:850px) {
-  .wiggle-top::before {    
-    height: 65px
-  }  
-  .wiggle-bottom::before {    
-    height: 40px
-  }  
+  background-image: url("graphics/curve_2.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
 }

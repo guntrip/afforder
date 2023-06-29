@@ -1,5 +1,5 @@
 
-var version="0.1";
+var version="0.02";
 var afData = {};
 var current = {today:0.0, week:0.0, month:0.0, balance_today:0.0, preview_daily: 0.0, preview_week:0.0, preview_month:0.0};
 
